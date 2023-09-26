@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- using external css for styling-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Required meta tags  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>TODO App</title>
+  </head>
+  <body>
+    <div class="header"><h1>ADD YOUR TODO ITEMS</h1></div>
+    
+    <div class="container">      
+      <div class="todo-input-form">
+        <div class="input-col">
+          <!-- todo form -->
+          <form id="todo-form">
+            <!-- input field -->            
+            <input
+              id="todo-text"
+              class="form-control"
+              type="text"
+              placeholder="Type your todo list.."
+              required
+            />
+            <!-- submit button -->
+            <input type="submit" class="cross-btn"/>
+          </form>
+        </div>
+
+        <div class="output-col">
+          <!-- placeholder for unordered list -->
+          <ul id="todo-list" class="list-unstyled"></ul>
+        </div>
+        <div><hr class="line"></div>      
+                           
+          <div class="clearButton">
+              <!-- clear All button -->
+          </div>
+           
+      </div>      
+    </div>
+
+    <!-- custom JS -->
+    <script src="./script.js"></script>
+    </body>
+  </body>
+</html>
