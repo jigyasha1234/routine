@@ -1,0 +1,80 @@
+* {
+  padding: auto;
+  margin: auto;
+  text-align: centre;
+}
+body {
+  box-sizing: border-box;
+  background-color: rgb(38, 1, 58);
+  color: rgb(248, 251, 251);
+}
+.header{
+  text-align: center;
+  margin-top: 5%;
+}
+.container {
+  margin-top: 5%;
+  width: 700px;
+  height: 500px;
+  align-items: center;
+  background-color: rgb(6, 1, 8);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 5px #a46ea9;
+  position: relative;
+}
+
+/* input form styling */
+.input-col {
+  padding: 10%;
+  padding-bottom: 5%;
+  margin: 2%;
+}
+
+#todo-text {
+  width: 431px;
+  height: 45px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: solid;
+}
+.cross-btn {
+    height: 45px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+/* output-col */
+.output-col {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    height: 260px;
+    width: 527px;   
+    overflow: auto;
+}
+.list-unstyled{
+    list-style: none;
+    padding-left: 0px;    
+}
+
+.filter-col{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.clearButton{
+    display: flex;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.filter-btn{
+    padding: 10px;
+}
+.filter-btn :hover{
+    background-color: rgb(153, 24, 212);
+    color: rgb(250, 252, 253);
+    cursor: pointer;
+}
+.total-task{
+  margin: 20px;
+}
