@@ -15,7 +15,7 @@ body {
 .container {
   margin-top: 5%;
   width: 700px;
-  height: 500px;
+  height: 395px;
   align-items: center;
   background-color: rgb(6, 1, 8);
   border-radius: 20px;
@@ -25,13 +25,11 @@ body {
 
 /* input form styling */
 .input-col {
-  padding: 10%;
-  padding-bottom: 5%;
-  margin: 2%;
+  padding: 5%;
 }
 
 #todo-text {
-  width: 431px;
+  width: 544px;
   height: 45px;
   border-radius: 10px;
   border-width: 5px;
@@ -48,7 +46,7 @@ body {
 .output-col {
     padding-top: 0px;
     padding-bottom: 10px;
-    height: 260px;
+    height: 200px;
     width: 527px;   
     overflow: auto;
 }
@@ -57,15 +55,10 @@ body {
     padding-left: 0px;    
 }
 
-.filter-col{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 8px;
-}
-.clearButton{
-    display: flex;
-    margin-right: 25px;
-    margin-top: 10px;
+.btn-group{
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
 }
 .filter-btn{
     padding: 10px;
@@ -74,7 +67,4 @@ body {
     background-color: rgb(153, 24, 212);
     color: rgb(250, 252, 253);
     cursor: pointer;
-}
-.total-task{
-  margin: 20px;
 }

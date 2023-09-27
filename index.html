@@ -17,7 +17,7 @@
         <div class="input-col">
           <!-- todo form -->
           <form id="todo-form">
-            <!-- input field -->            
+            <!-- input field -->           
             <input
               id="todo-text"
               class="form-control"
@@ -34,11 +34,21 @@
           <!-- placeholder for unordered list -->
           <ul id="todo-list" class="list-unstyled"></ul>
         </div>
-        <div><hr class="line"></div>      
-                           
-          <div class="clearButton">
+        <div><hr class="line"></div>  
+        <div style="display: flex;" class="btn-group">                                     
+          <div class="clearButton filter-btn">
               <!-- clear All button -->
           </div>
+          <div class="incompleteButton filter-btn">
+            <!-- incompleteButton button -->
+          </div>
+          <div class="completeButton filter-btn">
+          <!-- completeButton button -->
+          </div>
+          <div class="allButton filter-btn">
+          <!-- All button -->
+          </div>
+        </div> 
            
       </div>      
     </div>
