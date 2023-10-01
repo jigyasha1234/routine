@@ -2,6 +2,8 @@ const list = document.getElementById("todo-list");
 const form = document.getElementById("todo-form");
 const todoText = document.getElementById("todo-text");
 const clearButton = document.querySelector(".clearButton");
+const taskCounter = document.getElementById("tasks-counter");
+// tasks-counter
 const totalTasks = document.querySelector(".total-tasks");
 const incompleteButton = document.querySelector(".incompleteButton");
 const completeButton = document.querySelector(".completeButton");
@@ -17,13 +19,17 @@ function saveTodosInMemory() {
 function renderTodos() {
   // empty HTML inside the list
   list.innerHTML = "";
+  const newList = [];
 
   // loop over all todos
   todos.forEach((todo) => {
     if (todo.isDeleted === 0) {
       renderTodo(todo);
+      newList.push(todo);
     }
-  });
+  });  
+    todos=newList
+    taskCounter.innerHTML=newList.length;
 }
 
 function completeRenderTodos() {
@@ -55,7 +61,7 @@ function completeTodo(removeId) {
   todoIndex = todos.findIndex((todo) => todo.id == removeId);
 
   //Update object's complete property.
-  todos[todoIndex].complete = true;
+  todos[todoIndex].complete = !todos[todoIndex].complete;
 }
 
 function clearAllTodos() {
@@ -95,7 +101,7 @@ function renderTodo(todo) {
             <div onclick="deleteTodo(${todo.id});" style='font-size:20px; margin-right: 0px'>&#10006;</div>            
           </div>
         </li>
-      `;
+      `;  
 }
 
 function addTodo(todo) {
@@ -105,8 +111,9 @@ function addTodo(todo) {
     complete: todo.complete,
     isDeleted: todo.isDeleted,
   });
-  renderTodo(todo);
   saveTodosInMemory();
+  renderTodo(todo);
+  renderTodos();  
 }
 
 // listen for form to be submitted
