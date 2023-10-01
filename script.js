@@ -3,8 +3,7 @@ const form = document.getElementById("todo-form");
 const todoText = document.getElementById("todo-text");
 const clearButton = document.querySelector(".clearButton");
 const taskCounter = document.getElementById("tasks-counter");
-// tasks-counter
-const totalTasks = document.querySelector(".total-tasks");
+
 const incompleteButton = document.querySelector(".incompleteButton");
 const completeButton = document.querySelector(".completeButton");
 const allButton = document.querySelector(".allButton");
